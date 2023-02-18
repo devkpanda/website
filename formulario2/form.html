@@ -10,10 +10,11 @@
     <main>
         <section>
         <h1>Formulário de contato</h1>
-        <form action="processa.php" method="POST" autocomplete="on">
+        <form action="https://api.staticforms.xyz/submit" method="POST" autocomplete="on">
+            <input type="hidden" name="accessKey" value="chavedeacesso">
         <p>
             <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" placeholder="Nome Completo" maxlength="50" autocomplete="off"> 
+            <input type="text" name="name" id="inome" placeholder="Nome Completo" maxlength="50" autocomplete="off"> 
         </p>
         <p>
             <label for="iemail">Email</label>
@@ -21,7 +22,7 @@
         </p>
         <p>
             <label for="imsg">Mensagem</label>
-            <textarea name="msg" id="imsg" cols="50" rows="4" placeholder="Sua mensagem" autocomplete="off" required maxlength="1000"></textarea>  
+            <textarea name="message" id="imsg" cols="50" rows="4" placeholder="Sua mensagem" autocomplete="off" required maxlength="1000"></textarea>  
         </p>
         <p>
             <input type="submit" value="Enviar">
