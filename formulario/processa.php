@@ -19,7 +19,7 @@
         $mail = new SendGrid\Mail($from, $subject, $to, $content);
         
         //Necessário inserir a chave
-        $apiKey = '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';
+        $apiKey = 'quebug';
         $sg = new \SendGrid($apiKey);
 
         $response = $sg->client->mail()->send()->post($mail);
