@@ -142,3 +142,7 @@ nav a:visited{
     background-color: #a07904;
     transition: 1s;
 }
+
+.peer{
+    position: relative;
+}
