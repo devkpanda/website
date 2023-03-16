@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>DevKPanda - Início</title>
 </head>
 <body class="bg-white text-black">
@@ -49,11 +50,29 @@
         </div>
         <div><p class="font-medium text-xl">Integrantes</p></div>
         <div class="flex w-3/4 flex-wrap gap-2 p-4 items-center justify-center py-8">
-          <div class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Cecília Soares Costa - Scrum Master" style="background-image: url(images/cecilia.jpg)"></div>
-          <div class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Luís Melo - Fullstack Developer" style="background-image: url(images/luis.jpg)"></div>
-          <div class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Richard Klaoss Neumann - Fullstack Developer" style="background-image: url(images/richard.jpg)"></div>
-          <div class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Jhonnata Lorusso - FullStack Developer" style="background-image: url(images/jhonnate.jpg)"></div>
-          <div class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Vitor Fodra - Assistente" style="background-image: url(images/vitor.jpg)"></div>
+          <div id="ceciliaFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Cecília Soares Costa - Scrum Master" style="background-image: url(images/cecilia.jpg)"></div>
+          <div id="luisFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Luís Melo - Fullstack Developer" style="background-image: url(images/luis.jpg)"></div>
+          <div id="richardFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Richard Klaoss Neumann - Fullstack Developer" style="background-image: url(images/richard.jpg)"></div>
+          <div id="jhonnataFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Jhonnata Lorusso - FullStack Developer" style="background-image: url(images/jhonnate.jpg)"></div>
+          <div id="vitorFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover" data-tip="Vitor Fodra - Assistente" style="background-image: url(images/vitor.jpg)"></div>
+        </div>
+      </div>
+      <div>
+
+        <div id="ceciliaInfo">
+          <p>cecilia teste</p>
+        </div>
+        <div id="luisInfo">
+          <p>luis teste</p>
+        </div>
+        <div id="richardInfo">
+          <p>richard teste</p>
+        </div>
+        <div id="jhonnataInfo">
+          <p>jhonnata teste</p>
+        </div>
+        <div id="vitorInfo">
+          <p>vitor teste</p>
         </div>
       </div>
       <div class="bg-neutral w-full">
@@ -80,5 +99,54 @@
           </div>
         </footer>
       </div>
+  <script>
+    $(document).ready(function(){
+      $("#ceciliaInfo").hide();
+      $("#luisInfo").hide();
+      $("#richardInfo").hide();
+      $("#jhonnataInfo").hide();
+      $("#vitorInfo").hide();
+
+      $("#ceciliaFoto").click(function(){
+        $("#ceciliaInfo").show();
+        $("#luisInfo").hide();
+        $("#richardInfo").hide();
+        $("#jhonnataInfo").hide();
+        $("#vitorInfo").hide();
+      });
+      
+      $("#luisFoto").click(function(){
+        $("#ceciliaInfo").hide();
+        $("#luisInfo").show();
+        $("#richardInfo").hide();
+        $("#jhonnataInfo").hide();
+        $("#vitorInfo").hide();
+      });
+
+      $("#jhonnataFoto").click(function(){
+        $("#ceciliaInfo").hide();
+        $("#luisInfo").hide();
+        $("#richardInfo").show();
+        $("#jhonnataInfo").hide();
+        $("#vitorInfo").hide();
+      });
+
+      $("#richardFoto").click(function(){
+        $("#ceciliaInfo").hide();
+        $("#luisInfo").hide();
+        $("#richardInfo").hide();
+        $("#jhonnataInfo").show();
+        $("#vitorInfo").hide();
+      });
+      
+      $("#vitorFoto").click(function(){
+        $("#ceciliaInfo").hide();
+        $("#luisInfo").hide();
+        $("#richardInfo").hide();
+        $("#jhonnataInfo").hide();
+        $("#vitorInfo").show();
+      });
+    });
+  </script>
 </body>
 </html>
