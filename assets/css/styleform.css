@@ -26,6 +26,14 @@ form .btn:hover{
     transition: 1s;
 }
 
+#erro{
+    color: rgb(180, 1, 1);
+}
+
+.form-check{
+    margin-top: 10px;
+}
+
 footer a:hover{
     color: rgb(223, 223, 223);
 }
