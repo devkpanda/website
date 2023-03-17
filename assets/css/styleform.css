@@ -25,3 +25,7 @@ form .btn:hover{
     border-color: rgb(207, 207, 207);
     transition: 1s;
 }
+
+footer a:hover{
+    color: rgb(223, 223, 223);
+}
