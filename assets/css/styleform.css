@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+form{
+    background-color: rgb(199, 199, 199);
+    margin: 2%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+form .btn{
+    color: #f2f2f2;
+    background-color: rgb(67, 123, 226);
+    border-color: white;
+}
+
+form .btn:hover{
+    background-color: rgb(0, 54, 105);
+    border-color: rgb(207, 207, 207);
+    transition: 1s;
+}
