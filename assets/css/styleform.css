@@ -34,6 +34,14 @@ form .btn:hover{
     margin-top: 10px;
 }
 
+.form-check-input, .form-check-label{
+    margin-top: 6px;
+}
+
+.btn-primary{
+    margin-top: 14px;
+}
+
 footer a:hover{
     color: rgb(223, 223, 223);
 }

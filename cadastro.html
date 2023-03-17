@@ -44,21 +44,24 @@
           <label for="email" class="form-label">Email:</label>
           <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
         </div>
-        <div class="mb-1">
+        <div class="row">
+          <div class="col">
           <label for="pwd" class="form-label">Senha:</label>
           <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-        </div>
-        <div class="mb-3">
-          <label for="pwd" class="form-label">Confirme sua senha:</label>
-          <input type="password" class="form-control" id="confirmPwd" placeholder="Enter password" name="pswd" required>
-        </div>
-        <span id="erro"></span>
-        <div class="form-check mb-3">
           <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd()"> Mostrar senhas
+            <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd()"> Mostrar senha
           </label>
         </div>
+          <div class="col">
+          <label for="pwd" class="form-label">Confirme sua senha:</label>
+          <input type="password" class="form-control" id="confirmPwd" placeholder="Enter password" name="pswd" required>
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd2()"> Mostrar senha
+          </label>
+          </div>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <span id="erro"></span>
       </form>
     </section>
   </main>
