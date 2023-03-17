@@ -1,3 +1,21 @@
+//JavaScript
+//função de mostrar senha
+function showPwd(){
+    const pwd = document.getElementById('pwd')
+    const pwd2 = document.getElementById('confirmPwd')
+    if (pwd.type == 'password'){
+        pwd.type = 'text';
+    }else{
+        pwd.type = 'password';
+    }
+    if (pwd2.type == 'password'){
+        pwd2.type = 'text';
+    }else{
+        pwd2.type = 'password';
+    }
+};
+
+//jQuery
 $(document).ready(function(){
 
     //deixar o submit como default (n enviar o form)
@@ -10,10 +28,8 @@ $(document).ready(function(){
             $("#erro").text("");
             return true;
         }else{
-            $("#erro").text("As senhas não coincidem");
+            $("#erro").text("As senhas não coincidem").delay(5000).fadeOut('slow');
             return false;
-        }
+        };
     });
-
-
 });
