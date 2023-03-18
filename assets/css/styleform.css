@@ -15,6 +15,16 @@ form{
     border-radius: 10px;
 }
 
+form h1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#btnmar, #ircad{
+    margin-top: 0;
+}
+
 form .btn{
     color: #f2f2f2;
     background-color: rgb(67, 123, 226);

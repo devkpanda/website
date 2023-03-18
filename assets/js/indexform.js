@@ -53,7 +53,6 @@ $(document).ready(function(){
         const confirmPwd = $("#confirmPwd").val();
         if (pwd === confirmPwd){
             $("#erro").text("");
-            return true;
         }else{
             $("#erro").text("As senhas não coincidem").delay(4000).fadeOut('slow').show(); //antes q venham me perguntar, o .show serve só para mostrar após o efeito de fadeout, pois qnd ele executa esse efeito, não é possível mostrar novamente sem o show
             return false;

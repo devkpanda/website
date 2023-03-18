@@ -28,7 +28,7 @@
             <ul class="menu menu-horizontal px-1">
               <li><a href="index.html" class="font-sans text-black font-semibold" target="_blank">Home</a></li>
               <li><a href=contato.html class="font-sans text-black font-semibold " target="_blank">Contatos</a></li>
-              <li><a href=cadastro.html class="font-sans text-black font-semibold " target="_blank">Cadastro</a></li>
+              <li><a href=cadastro.html class="font-sans text-black font-semibold " target="_blank">Login</a></li>
             </ul>
           </div>
         </div>
@@ -38,8 +38,27 @@
 
   <main>
     <section>
-      <!-- Ínicio do formulário -->
+      <!-- Ínicio do formulário de login-->
       <form action="/action_page.php" id="formCadastro">
+        <h1>Login</h1>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Coloque seu email" name="email" required>
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="pwd" class="form-label">Senha:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Coloque sua senha" name="pswd" required>
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd()"> Mostrar senha
+          </label>
+        </div>
+        <button type="submit" id="btnmar" class="btn btn-primary">Logar</button>
+        <button type="button" id="ircad" class="btn btn-primary">Cadastrar-se</button>
+        <span id="erro"></span>
+      </form>
+      <!-- Ínicio do formulário de cadastro-->
+      <form action="/action_page.php" id="formCadastro">
+        <h1>Cadastro</h1>
         <div class="row">
           <div class="topnome col">
             <label for="nome" class="form-label">Nome:</label>
@@ -47,32 +66,34 @@
           </div>
           <div class="topnome col">
             <label for="sobrenome" class="form-label">Sobrenome:</label>
-            <input type="sobrenome" class="form-control" id="sobrenome" placeholder="Coloque seu sobrenome" name="sobrenome" required>
+            <input type="sobrenome" class="form-control" id="sobrenome" placeholder="Coloque seu sobrenome"
+              name="sobrenome" required>
           </div>
         </div>
-          <div class="mb-3 mt-3">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Coloque seu email" name="email" required>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Coloque seu email" name="email" required>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="pwd" class="form-label">Senha:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Coloque sua senha" name="pswd" required>
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd()"> Mostrar senha
+            </label>
           </div>
-          <div class="row">
-            <div class="col">
-              <label for="pwd" class="form-label">Senha:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Coloque sua senha" name="pswd" required>
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd()"> Mostrar senha
-              </label>
-            </div>
-            <div class="col">
-              <label for="pwd" class="form-label">Confirme sua senha:</label>
-              <input type="password" class="form-control" id="confirmPwd" placeholder="Enter password" name="pswd"
-                required>
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd2()"> Mostrar senha
-              </label>
-            </div>
+          <div class="col">
+            <label for="pwd" class="form-label">Confirme sua senha:</label>
+            <input type="password" class="form-control" id="confirmPwd" placeholder="Enter password" name="pswd"
+              required>
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd2()"> Mostrar senha
+            </label>
           </div>
-          <button type="submit" class="btn btn-primary">Cadastrar</button>
-          <span id="erro"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <button type="button" id="irlog" class="btn btn-primary">Logar-se</button>
+        <span id="erro"></span>
       </form>
     </section>
   </main>
