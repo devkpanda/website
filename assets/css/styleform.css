@@ -27,13 +27,12 @@ form .btn:hover{
     transition: 1s;
 }
 
-.topbug{
+.topnome{
     padding-top: 10px;
 }
 
-.form-check-input, .form-check-label{
-    margin-top: 6px;
-}
+/* .form-check-input, .form-check-label{
+} */
 
 #erro{
     color: rgb(180, 1, 1);

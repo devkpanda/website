@@ -1,7 +1,7 @@
 //JavaScript
+const pwd = document.getElementById('pwd');
 //função de mostrar senha btn1
 function showPwd(){
-    const pwd = document.getElementById('pwd')
     if (pwd.type == 'password'){
         pwd.type = 'text';
     }else{
@@ -11,7 +11,7 @@ function showPwd(){
 
 //função de mostrar senha btn2
 function showPwd2(){
-    const pwd2 = document.getElementById('confirmPwd')
+    const pwd2 = document.getElementById('confirmPwd');
     if (pwd2.type == 'password'){
         pwd2.type = 'text';
     }else{
