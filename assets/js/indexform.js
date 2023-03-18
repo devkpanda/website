@@ -22,12 +22,26 @@ function showPwd2(){
 //jQuery
 $(document).ready(function(){
 
+    //esconder formulário de cadastro
+    $("#formCadastro").hide();
+    //mostrar formulário de cadastro ao clicar no botão
+    $("#irCad").click(function(){
+        $("#formCadastro").show();
+        $("#formLogin").hide();
+    });
+
+    //mostrar formulário de login ao clicar no botão
+    $("#irLog").click(function(){
+        $("#formCadastro").hide();
+        $("#formLogin").show();
+    });
+
     //validação de número na string
     function semNumero(n){
         return n.match(/\d+/g);
     }
 
-    //deixar o submit como default (n enviar o form)
+    //deixar o submit como default (n enviar o form cadastro)
     $("#formCadastro").submit(function(event){
         event.preventDefault();
 
@@ -57,5 +71,10 @@ $(document).ready(function(){
             $("#erro").text("As senhas não coincidem").delay(4000).fadeOut('slow').show(); //antes q venham me perguntar, o .show serve só para mostrar após o efeito de fadeout, pois qnd ele executa esse efeito, não é possível mostrar novamente sem o show
             return false;
         };
+    });
+
+    //deixar o submit como default (n enviar o form login)
+    $("#formLogin").submit(function(event){
+        event.preventDefault();
     });
 });
