@@ -44,7 +44,7 @@ form .btn:hover{
 /* .form-check-input, .form-check-label{
 } */
 
-#erro{
+#sobrenomeSpan, #nomeSpan, #senhaCoin{
     color: rgb(180, 1, 1);
 }
 

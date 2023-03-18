@@ -12,6 +12,7 @@ function showPwd1(){
     }
 };
 
+//função de mostrar senha btn
 function showPwd(){
     if (pwd.type == 'password'){
         pwd.type = 'text';
@@ -33,6 +34,9 @@ function showPwd2(){
         $(".shPwd2").text("Mostrar senha");
     }
 };
+
+
+
 
 //jQuery
 $(document).ready(function(){
@@ -63,27 +67,27 @@ $(document).ready(function(){
         //se nome e sobrenome estiverem com número
         const nome = $("#nome").val();
         if (semNumero(nome) != null) {
-            $("#erro").text("O nome não pode ter número").delay(4000).fadeOut('slow').show();
+            $("#nomeSpan").text("O nome não pode ter número").delay(4000).fadeOut('slow').show();
             return false;
         }else{
-            $("#erro").text("");
+            $("#nomeSpan").text("");
         };
 
         const sobrenome = $("#sobrenome").val();
         if (semNumero(sobrenome) != null) {
-            $("#erro").text("O sobrenome não pode ter número").delay(4000).fadeOut('slow').show();
+            $("#sobrenomeSpan").text("O sobrenome não pode ter número").delay(4000).fadeOut('slow').show();
             return false;
         }else{
-            $("#erro").text("");
+            $("#sobrenomeSpan").text("");
         };
 
         //confirmação de senha
         const pwd = $("#pwd").val();
         const confirmPwd = $("#confirmPwd").val();
         if (pwd === confirmPwd){
-            $("#erro").text("");
+            $("#senhaCoin").text("");
         }else{
-            $("#erro").text("As senhas não coincidem").delay(4000).fadeOut('slow').show(); //antes q venham me perguntar, o .show serve só para mostrar após o efeito de fadeout, pois qnd ele executa esse efeito, não é possível mostrar novamente sem o show
+            $("#senhaCoin").text("As senhas não coincidem").delay(4000).fadeOut('slow').show(); //antes q venham me perguntar, o .show serve só para mostrar após o efeito de fadeout, pois qnd ele executa esse efeito, não é possível mostrar novamente sem o show
             return false;
         };
     });
