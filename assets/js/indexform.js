@@ -4,8 +4,10 @@ const pwd = document.getElementById('pwd');
 function showPwd(){
     if (pwd.type == 'password'){
         pwd.type = 'text';
+        $(".shPwd").text("Esconder senha");
     }else{
         pwd.type = 'password';
+        $(".shPwd").text("Mostrar senha");
     }
 };
 
@@ -14,8 +16,10 @@ function showPwd2(){
     const pwd2 = document.getElementById('confirmPwd');
     if (pwd2.type == 'password'){
         pwd2.type = 'text';
+        $(".shPwd").text("Esconder senha");
     }else{
         pwd2.type = 'password';
+        $(".shPwd").text("Mostrar senha");
     }
 };
 
