@@ -22,17 +22,40 @@ function showPwd2(){
 //jQuery
 $(document).ready(function(){
 
+    //validação de número na string
+    function semNumero(n){
+        return n.match(/\d+/g);
+    }
+
     //deixar o submit como default (n enviar o form)
     $("#formCadastro").submit(function(event){
         event.preventDefault();
 
+        //se nome e sobrenome estiverem com número
+        const nome = $("#nome").val();
+        if (semNumero(nome) != null) {
+            $("#erro").text("O nome não pode ter número").delay(4000).fadeOut('slow').show();
+            return false;
+        }else{
+            $("#erro").text("");
+        };
+
+        const sobrenome = $("#sobrenome").val();
+        if (semNumero(sobrenome) != null) {
+            $("#erro").text("O sobrenome não pode ter número").delay(4000).fadeOut('slow').show();
+            return false;
+        }else{
+            $("#erro").text("");
+        };
+
+        //confirmação de senha
         const pwd = $("#pwd").val();
         const confirmPwd = $("#confirmPwd").val();
         if (pwd === confirmPwd){
             $("#erro").text("");
             return true;
         }else{
-            $("#erro").text("As senhas não coincidem").delay(5000).fadeOut('slow');
+            $("#erro").text("As senhas não coincidem").delay(4000).fadeOut('slow').show(); //antes q venham me perguntar, o .show serve só para mostrar após o efeito de fadeout, pois qnd ele executa esse efeito, não é possível mostrar novamente sem o show
             return false;
         };
     });
