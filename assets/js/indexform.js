@@ -1,6 +1,17 @@
 //JavaScript
 const pwd = document.getElementById('pwd');
 //função de mostrar senha btn1
+function showPwd1(){
+    const pwd1 = document.getElementById('pwd1');
+    if (pwd1.type == 'password'){
+        pwd1.type = 'text';
+        $(".shPwd").text("Esconder senha");
+    }else{
+        pwd1.type = 'password';
+        $(".shPwd").text("Mostrar senha");
+    }
+};
+
 function showPwd(){
     if (pwd.type == 'password'){
         pwd.type = 'text';
@@ -16,10 +27,10 @@ function showPwd2(){
     const pwd2 = document.getElementById('confirmPwd');
     if (pwd2.type == 'password'){
         pwd2.type = 'text';
-        $(".shPwd").text("Esconder senha");
+        $(".shPwd2").text("Esconder senha");
     }else{
         pwd2.type = 'password';
-        $(".shPwd").text("Mostrar senha");
+        $(".shPwd2").text("Mostrar senha");
     }
 };
 
