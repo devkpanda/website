@@ -106,7 +106,6 @@ $(document).ready(function(){
         };
 
         const pwd = $("#pwd").val();
-        const pwd1 = $("#pwd1").val();
         const confirmPwd = $("#confirmPwd").val();
 
         //senha vazia
@@ -119,6 +118,10 @@ $(document).ready(function(){
             $("#senhaCoin").text("As senhas não coincidem").delay(4000).fadeOut('slow').show(); //antes q venham me perguntar, o .show serve só para mostrar após o efeito de fadeout, pois qnd ele executa esse efeito, não é possível mostrar novamente sem o show
             return false;
         };
+
+        const email = $("#email").val();
+        //email vazio heh
+        arrayVazio(email, $("emailSpan"));
     });
 
     //deixar o submit como default (n enviar o form login)

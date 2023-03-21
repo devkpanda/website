@@ -87,7 +87,7 @@ form .btn:hover{
 /* .form-check-input, .form-check-label{
 } */
 
-#sobrenomeSpan, #nomeSpan, #senhaCoin, #senhaSpan{
+#sobrenomeSpan, #nomeSpan, #senhaCoin, #senhaSpan, #emailSpan{
     color: rgb(180, 1, 1);
 }
 
