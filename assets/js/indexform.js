@@ -35,7 +35,6 @@ function showPwd2(){
     }
 };
 
-
 //função que valida email
 // function validaEmail(){
 //     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
@@ -61,6 +60,16 @@ $(document).ready(function(){
         $("#textolateral").css('margin-top', '2%')
     });
 
+    //se o array estiver vazio
+    function arrayVazio(array, span){
+        if (array.length === 0){
+            $(span).text("O array não pode ficar vazio").delay(4000).fadeOut('slow').show();
+            return false;
+        }else{
+            $("this").text("");
+        }
+    }
+
     //validação de número na string
     function semNumero(n){
         return n.match(/\d+/g);
@@ -70,8 +79,12 @@ $(document).ready(function(){
     $("#formCadastro").submit(function(event){
         event.preventDefault();
 
-        //se nome e sobrenome estiverem com número
         const nome = $("#nome").val();
+
+        //nome vazio
+        arrayVazio(nome, $("#nomeSpan"));
+
+        //se nome e sobrenome estiverem com número
         if (semNumero(nome) != null) {
             $("#nomeSpan").text("O nome não pode ter número").delay(4000).fadeOut('slow').show();
             return false;
@@ -80,6 +93,11 @@ $(document).ready(function(){
         };
 
         const sobrenome = $("#sobrenome").val();
+
+        //sobrenome vazio
+        arrayVazio(sobrenome, $("#sobrenomeSpan"));
+
+
         if (semNumero(sobrenome) != null) {
             $("#sobrenomeSpan").text("O sobrenome não pode ter número").delay(4000).fadeOut('slow').show();
             return false;
@@ -87,9 +105,14 @@ $(document).ready(function(){
             $("this").text("");
         };
 
-        //confirmação de senha
         const pwd = $("#pwd").val();
+        const pwd1 = $("#pwd1").val();
         const confirmPwd = $("#confirmPwd").val();
+
+        //senha vazia
+        arrayVazio(pwd, $("#senhaSpan"));
+
+        //confirmação de senha
         if (pwd === confirmPwd){
             $("#senhaCoin").text("");
         }else{
