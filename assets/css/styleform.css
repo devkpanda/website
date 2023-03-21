@@ -11,8 +11,12 @@ nav a:active{
     background-color: rgb(145, 145, 145);
 }
 
-section{
-    background-color: #E5E5E5;
+main{
+    background-color: gray;
+}
+
+section h1, p{
+    color: white;
 }
 
 form{
