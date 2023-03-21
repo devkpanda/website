@@ -91,7 +91,7 @@ $(document).ready(function(){
         }else{
             $("this").text("");
         };
-
+        // Energy_Neumann
         const sobrenome = $("#sobrenome").val();
 
         //sobrenome vazio
@@ -121,7 +121,7 @@ $(document).ready(function(){
 
         const email = $("#email").val();
         //email vazio heh
-        arrayVazio(email, $("emailSpan"));
+        arrayVazio(email, $("#emailSpan"));
     });
 
     //deixar o submit como default (n enviar o form login)
