@@ -137,6 +137,15 @@ nav a:visited{
     transition: 1s;
 }
 
+#botaocontato{
+    background-color: #F2BC1B;
+    color: rgb(94, 87, 0);
+}
+
+#botaocontato:hover{
+    background-color: #ffcf41;
+}
+
 .peer{
     position: relative;
 }
