@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: #E5E5E5;
 }
 
 nav a:active{
@@ -12,25 +12,25 @@ nav a:active{
 }
 
 main{
-    background-color: gray;
+    background-color: #E5E5E5;
 }
 
 #textolateral{
-    color: white;
+    color: black;
     float: left;
     width: 25%;
-    margin: 2%;
+    margin: 2% 1% 2% 18%;
 }
 
 #textolateral h1{
     font-size: 35px;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
 }
 
 form{
     background-color: rgb(199, 199, 199);
     width: 40%;
-    margin: 2% auto;
+    margin: 2% 48%;
     padding: 0.1% 1% 1% 1%;
     border-radius: 10px;
 }
