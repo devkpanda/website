@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #E5E5E5;
+    background-color: white;
 }
 
 nav a:active{
@@ -15,8 +15,16 @@ main{
     background-color: gray;
 }
 
-section h1, p{
+#textolateral{
     color: white;
+    float: left;
+    width: 25%;
+    margin: 2%;
+}
+
+#textolateral h1{
+    font-size: 35px;
+    margin-bottom: 2px;
 }
 
 form{
