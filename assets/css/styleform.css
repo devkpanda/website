@@ -62,10 +62,11 @@ form .btn:hover{
 }
 
 #semConta{
+    margin-top: 1%;
     margin-left: 27%;
 }
 
-.cssCad{
+.cssNovo{
     text-decoration: underline;
     cursor: pointer;
 }
