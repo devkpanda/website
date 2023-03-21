@@ -41,10 +41,6 @@ form h1{
     font-weight: 500;
 }
 
-#btnmar, #irCad{
-    margin-top: 0;
-}
-
 form .btn{
     color: #f2f2f2;
     background-color: rgb(67, 123, 226);
@@ -55,6 +51,23 @@ form .btn:hover{
     background-color: rgb(0, 54, 105);
     border-color: rgb(207, 207, 207);
     transition: 1s;
+}
+
+#btnmar, #irCad{
+    margin-top: 0;
+}
+
+#btnmar{
+    width: 100%;
+}
+
+#semConta{
+    margin-left: 27%;
+}
+
+.cssCad{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .topnome{
