@@ -36,6 +36,10 @@ function showPwd2(){
 };
 
 
+//função que valida email
+// function validaEmail(){
+//     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+// }
 
 
 //jQuery
