@@ -53,12 +53,16 @@ form .btn:hover{
     transition: 1s;
 }
 
-#btnmar, #irCad{
+#btnlog, #irCad{
     margin-top: 0;
 }
 
-#btnmar{
+#btnlog{
     width: 100%;
+}
+
+#btncad{
+    margin-top: 3%;
 }
 
 #semConta{
