@@ -51,6 +51,7 @@ $(document).ready(function(){
     $("#irCad").click(function(){
         $("#formCadastro").show();
         $("#formLogin").hide();
+        $("#textolateral").css('margin-top', '6%')
     });
 
     //mostrar formulário de login ao clicar no botão
@@ -74,7 +75,7 @@ $(document).ready(function(){
             $("#nomeSpan").text("O nome não pode ter número").delay(4000).fadeOut('slow').show();
             return false;
         }else{
-            $("#nomeSpan").text("");
+            $("this").text("");
         };
 
         const sobrenome = $("#sobrenome").val();
@@ -82,7 +83,7 @@ $(document).ready(function(){
             $("#sobrenomeSpan").text("O sobrenome não pode ter número").delay(4000).fadeOut('slow').show();
             return false;
         }else{
-            $("#sobrenomeSpan").text("");
+            $("this").text("");
         };
 
         //confirmação de senha
