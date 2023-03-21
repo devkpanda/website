@@ -140,3 +140,8 @@ nav a:visited{
 .peer{
     position: relative;
 }
+
+#padding {
+    padding: 2% 0% 2% 20%;
+}
+
