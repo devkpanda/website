@@ -35,11 +35,6 @@ function showPwd2(){
     }
 };
 
-//função que valida email
-// function validaEmail(){
-//     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-// }
-
 
 //jQuery
 $(document).ready(function(){
@@ -119,9 +114,6 @@ $(document).ready(function(){
             return false;
         };
 
-        const email = $("#email").val();
-        //email vazio heh
-        arrayVazio(email, $("#emailSpan"));
     });
 
     //deixar o submit como default (n enviar o form login)
