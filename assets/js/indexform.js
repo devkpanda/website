@@ -123,7 +123,11 @@ $(document).ready(function(){
     $("#formLogin").submit(function(event){
         event.preventDefault();
 
+        //array vazio
         const emailLog = $("#emailLog").val();
         arrayVazio(emailLog, $("#emailLogSpan"));
+
+        const senhaLog = $("#pwd1").val();
+        arrayVazio(senhaLog, $("#senhaLogSpan"));
     });
 });
