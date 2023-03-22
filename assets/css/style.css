@@ -146,6 +146,10 @@ nav a:visited{
     background-color: #ffcf41;
 }
 
+#botaoprosobre:hover{
+    background-color: rgb(49, 0, 128);
+}
+
 .peer{
     position: relative;
 }
