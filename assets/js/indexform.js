@@ -114,10 +114,16 @@ $(document).ready(function(){
             return false;
         };
 
+        const emailCad = $("#emailCad").val();
+        arrayVazio(emailCad, $("#emailSpan"));
+
     });
 
     //deixar o submit como default (n enviar o form login)
     $("#formLogin").submit(function(event){
         event.preventDefault();
+
+        const emailLog = $("#emailLog").val();
+        arrayVazio(emailLog, $("#emailLogSpan"));
     });
 });
