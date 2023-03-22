@@ -65,6 +65,17 @@ $(document).ready(function(){
         }
     }
 
+    //função com regex da validação de email: https://stackoverflow.com/questions/2507030/how-can-one-use-jquery-to-validate-email-addresses
+    function validateEmail(email, span) {
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        if(emailReg.test(email) == true){
+            $("this").text("");
+        }else if(emailReg.test(email) == false){
+            $(span).text("O email precisa estar certo").delay(4000).fadeOut('slow').show();
+            return false;
+        }
+      };
+
     //validação de número na string
     function semNumero(n){
         return n.match(/\d+/g);
@@ -116,6 +127,7 @@ $(document).ready(function(){
 
         const emailCad = $("#emailCad").val();
         arrayVazio(emailCad, $("#emailSpan"));
+        validateEmail(emailCad, $("#emailSpan"));
 
     });
 
@@ -126,6 +138,7 @@ $(document).ready(function(){
         //array vazio
         const emailLog = $("#emailLog").val();
         arrayVazio(emailLog, $("#emailLogSpan"));
+        validateEmail(emailLog, $("#emailLogSpan"));
 
         const senhaLog = $("#pwd1").val();
         arrayVazio(senhaLog, $("#senhaLogSpan"));
