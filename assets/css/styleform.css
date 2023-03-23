@@ -59,6 +59,9 @@ form .btn:hover{
 
 #btnlog, #btncad{
     width: 100%;
+    background-color: #f2bc1b;
+    color: black;
+    border: none;
 }
 
 #btncad{
