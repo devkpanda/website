@@ -54,10 +54,10 @@
         <div class="mb-3 mt-3">
           <label for="pwd" class="form-label">Senha:</label>
           <input type="password" class="form-control" id="pwd1" placeholder="Coloque sua senha" name="pswd">
-          <span id="senhaLogSpan"></span>
-          <label class="form-check-label">
+          <label class="mostrarSenha form-check-label">
             <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd1()">
             <span class="shPwd">Mostrar senha</span>
+            <br><span id="senhaLogSpan"></span>
           </label>
         </div>
         <button type="submit" id="btnlog" class="btn btn-primary">Logar</button>
@@ -90,20 +90,20 @@
           <div class="col">
             <label for="pwd" class="form-label">Senha:</label>
             <input type="password" class="form-control" id="pwd" placeholder="Coloque sua senha" name="pswd">
-            <span id="senhaSpan"></span>
-            <label class="form-check-label">
+            <label class="mostrarSenha form-check-label">
               <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd()">
               <span class="shPwd">Mostrar senha</span>
+              <br><span id="senhaSpan"></span>
             </label>
           </div>
           <div class="col">
             <label for="confirmPwd" class="form-label">Confirme sua senha:</label>
             <input type="password" class="form-control" id="confirmPwd" placeholder="Enter password" name="pswd"
             >
-            <span id="senhaCoin"></span>
-            <label class="form-check-label">
+            <label class="mostrarSenha form-check-label">
               <input class="form-check-input" type="checkbox" name="showpwd" onclick="showPwd2()">
               <span class="shPwd2">Mostrar senha</span>
+              <br><span id="senhaCoin"></span>
             </label>
           </div>
         </div>
