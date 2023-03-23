@@ -72,17 +72,16 @@
     </div>
     <div class="flex w-3/4 flex-wrap gap-2 p-4 items-center justify-center py-8">
       <div id="ceciliaFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
-        data-tip="Cecília Soares Costa - Scrum Master" style="background-image: url(assets/images/cecilia.jpg)"></div>
+        style="background-image: url(assets/images/cecilia.jpg)"></div>
       <div id="luisFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
-        data-tip="Luís Melo - Fullstack Developer" style="background-image: url(assets/images/fotoNovaLuis.jpg)"></div>
+        style="background-image: url(assets/images/fotoNovaLuis.jpg)"></div>
       <div id="richardFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
-        data-tip="Richard Klaoss Neumann - Fullstack Developer"
         style="background-image: url(assets/images/fotoNovaRichard.jpg)"></div>
       <div id="jhonnataFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
-        data-tip="Jhonnata Lorusso - FullStack Developer" style="background-image: url(assets/images/jhonnate.jpg)">
+        style="background-image: url(assets/images/jhonnate.jpg)">
       </div>
       <div id="vitorFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
-        data-tip="Vitor Fodra - Assistente" style="background-image: url(assets/images/vitor.jpg)"></div>
+        style="background-image: url(assets/images/vitor.jpg)"></div>
     </div>
   </div>
   <div>
@@ -180,14 +179,14 @@
         $("#ceciliaInfo").hide();
         $("#luisInfo").hide();
         $("#richardInfo").hide();
-        $("#jhonnataInfo").show();
+        $("#jhonnataInfo").fadeIn("slow");
         $("#vitorInfo").hide();
       });
 
       $("#richardFoto").click(function () {
         $("#ceciliaInfo").hide();
         $("#luisInfo").hide();
-        $("#richardInfo").show();
+        $("#richardInfo").fadeIn("slow");
         $("#jhonnataInfo").hide();
         $("#vitorInfo").hide();
       });
@@ -197,7 +196,7 @@
         $("#luisInfo").hide();
         $("#richardInfo").hide();
         $("#jhonnataInfo").hide();
-        $("#vitorInfo").show();
+        $("#vitorInfo").fadeIn("slow");
       });
     });
   </script>
