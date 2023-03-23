@@ -15,6 +15,11 @@ main{
     background-color: #E5E5E5;
 }
 
+#textolateral > h1 {
+    font-weight: 500
+
+}
+
 #textolateral{
     color: black;
     float: left;
@@ -29,9 +34,9 @@ main{
 
 form{
     background-color: rgb(199, 199, 199);
-    width: 40%;
-    margin: 2% 48%;
-    padding: 0.1% 1% 1% 1%;
+    width: 35%;
+    margin: 6% 48%;
+    padding: 1% 2% 1% 2%;
     border-radius: 10px;
 }
 
@@ -87,7 +92,7 @@ form .btn:hover{
 /* .form-check-input, .form-check-label{
 } */
 
-#sobrenomeSpan, #nomeSpan, #senhaCoin, #senhaSpan, #emailSpan, #emailLogSpan, #senhaLogSpan{
+#sobrenomeSpan, #nomeSpan, #senhaCoin, #senhaSpan, #emailSpan{
     color: rgb(180, 1, 1);
 }
 
