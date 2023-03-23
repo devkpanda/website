@@ -34,16 +34,16 @@ nav {
     height: 16vh;
 }
 
-nav a:hover{
+#nav a:hover{
     color: rgb(17, 17, 17);
     transition: 1.2s;
 }
 
-nav a:active{
+#nav a:active{
     background-color: rgb(117, 117, 117);
 }
 
-nav a:visited{
+#nav a:visited{
     color: rgb(85, 85, 85);
 }
 
