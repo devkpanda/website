@@ -72,13 +72,13 @@
     </div>
     <div class="flex w-3/4 flex-wrap gap-2 p-4 items-center justify-center py-8">
       <div id="ceciliaFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
-        style="background-image: url(assets/images/cecilia.jpg)"></div>
+        style="background-image: url(assets/images/fotoNovaCecilia.jpeg)"></div>
       <div id="luisFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
         style="background-image: url(assets/images/fotoNovaLuis.jpg)"></div>
       <div id="richardFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
         style="background-image: url(assets/images/fotoNovaRichard.jpg)"></div>
       <div id="jhonnataFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
-        style="background-image: url(assets/images/jhonnate.jpg)">
+        style="background-image: url(assets/images/fotoNovaJhonnata.jpeg)">
       </div>
       <div id="vitorFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
         style="background-image: url(assets/images/fotoNovaVitor.jpg)"></div>
@@ -86,8 +86,14 @@
   </div>
   <div>
 
-    <div id="ceciliaInfo">
-      <p>cecilia teste</p>
+    <div class="rounded-md" id="ceciliaInfo">
+      <div class="container mx-auto px-4 flex flex-row bg-gray-50 rounded-md">
+        <div class="w-80 h-96 bg-center bg-cover my-3 rounded-md" style="background-image: url(assets/images/fotoNovaCecilia.jpeg)"></div>
+        <div class="basis-4/6 rounded-md p-3 m-3">
+          <h1 class="text-black text-left font-bold text-3xl pb-2">Cecília Soares - Fullstack Developer</h1>
+          <p class="text-black text-left text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nulla odio, laboriosam debitis sit corporis aliquid sunt voluptatum quisquam, dolorum totam natus aliquam maiores? Sapiente, eaque error! Sunt, culpa vero?</p>
+        </div>
+      </div>
     </div>
 
     <div class="rounded-md" id="luisInfo">
@@ -112,7 +118,7 @@
 
     <div class="rounded-md" id="jhonnataInfo">
       <div class="container mx-auto px-4 flex flex-row bg-gray-50 rounded-md">
-        <div class="w-28 h-40 bg-center bg-cover" style="background-image: url(assets/images/)"></div>
+        <div class="w-80 h-96 bg-center bg-cover" style="background-image: url(assets/images/fotoNovaJhonnata.jpeg)"></div>
         <div class="basis-4/6 rounded-md p-3 m-3">
           <h1 class="text-black text-left font-bold text-3xl pb-2">Jhonnata Lorusso - Fullstack Developer</h1>
           <p class="text-black text-left text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nulla odio, laboriosam debitis sit corporis aliquid sunt voluptatum quisquam, dolorum totam natus aliquam maiores? Sapiente, eaque error! Sunt, culpa vero?</p>
@@ -122,13 +128,14 @@
 
     <div class="rounded-md" id="vitorInfo">
       <div class="container mx-auto px-4 flex flex-row bg-gray-50 rounded-md">
-        <div class="w-28 h-40 bg-center bg-cover" style="background-image: url(assets/images/fotoNovaVitor.jpg)"></div>
+        <div class="w-80 h-96 bg-center bg-cover my-3 rounded-md" style="background-image: url(assets/images/fotoNovaVitor.jpg)"></div>
         <div class="basis-4/6 rounded-md p-3 m-3">
           <h1 class="text-black text-left font-bold text-3xl pb-2">Vitor Fodra - Fullstack Developer</h1>
           <p class="text-black text-left text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nulla odio, laboriosam debitis sit corporis aliquid sunt voluptatum quisquam, dolorum totam natus aliquam maiores? Sapiente, eaque error! Sunt, culpa vero?</p>
         </div>
       </div>
     </div>
+
   </div>
   <div class="bg-neutral w-full">
     <footer class="footer p-10 text-neutral-content mx-auto max-w-4xl">
@@ -154,58 +161,7 @@
       </div>
     </footer>
   </div>
-  <script>
-    $(document).ready(function () {
-      $("#ceciliaInfo").hide();
-      $("#luisInfo").hide();
-      $("#richardInfo").hide();
-      $("#jhonnataInfo").hide();
-      $("#vitorInfo").hide();
-
-      $("#ceciliaFoto").click(function () {
-        $("#ceciliaInfo").fadeIn("slow");
-        $("#luisInfo").hide();
-        $("#richardInfo").hide();
-        $("#jhonnataInfo").hide();
-        $("#vitorInfo").hide();
-      });
-
-      $("#luisFoto").click(function () {
-        $("#ceciliaInfo").hide();
-        $("#luisInfo").fadeIn("slow");
-        $("#richardInfo").hide();
-        $("#jhonnataInfo").hide();
-        $("#vitorInfo").hide();
-        if ($("#luisFoto").click && $("#luisFoto").style.display === "none") {
-          $("#luisInfo").hide();
-        }
-      });
-
-      $("#jhonnataFoto").click(function () {
-        $("#ceciliaInfo").hide();
-        $("#luisInfo").hide();
-        $("#richardInfo").hide();
-        $("#jhonnataInfo").fadeIn("slow");
-        $("#vitorInfo").hide();
-      });
-
-      $("#richardFoto").click(function () {
-        $("#ceciliaInfo").hide();
-        $("#luisInfo").hide();
-        $("#richardInfo").fadeIn("slow");
-        $("#jhonnataInfo").hide();
-        $("#vitorInfo").hide();
-      });
-
-      $("#vitorFoto").click(function () {
-        $("#ceciliaInfo").hide();
-        $("#luisInfo").hide();
-        $("#richardInfo").hide();
-        $("#jhonnataInfo").hide();
-        $("#vitorInfo").fadeIn("slow");
-      });
-    });
-  </script>
+  <script src="assets/js/infoMembersAnimation.js"></script>
 </body>
 
 </html>
