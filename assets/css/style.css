@@ -121,6 +121,30 @@
     margin-bottom: 5%;
 }
 
+cont1 {
+    --bs-gutter-x: 0.3rem;
+}
+
+#button1 {
+    background-color: #ededed;
+    border-radius: 0;
+    border-color: #ededed;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
+}
+
+#button2 {
+    background-color: #ededed;
+    border-radius: 0;
+    border-color: #ededed;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
+}
+
+#button3 {
+    background-color: #ededed;
+    border-radius: 0;
+    border-color: #ededed;
+    box-shadow: 0px 3px 1px rgb(0, 0, 0);
+}
 
 
 #botaocontato{
