@@ -1,28 +1,28 @@
 // JavaScript
 
 $(document).ready(function () {
-    $("#cont2").hide();
-    $("#cont3").hide();
+    $("#produtos2").hide();
+    $("#produtos3").hide();
 
-    $("#button").click(function () {
-        $("#cont1").show(1000);
-        $("#cont2").hide();
-        $("#cont3").hide();
+    $("#button1").click(function () {
+        $("#produtos1").fadeIn("slow");
+        $("#produtos2").hide();
+        $("#produtos3").hide();
 
         // $("#textolateral").css('margin-top', '2%')
     });
 
     $("#button2").click(function () {
-        $("#cont1").hide();
-        $("#cont3").hide();
-        $("#cont2").show(1000);
+        $("#produtos1").hide();
+        $("#produtos3").hide();
+        $("#produtos2").fadeIn("slow");
         // $("#textolateral").css('margin-top', '5%') 
     });
 
     $("#button3").click(function () {
-        $("#cont3").show(1000);
-        $("#cont1").hide();
-        $("#cont2").hide();
+        $("#produtos3").fadeIn("slow");
+        $("#produtos1").hide();
+        $("#produtos2").hide();
         // $("#textolateral").css('margin-top', '2%')
     });
 
