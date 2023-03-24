@@ -5,6 +5,7 @@ $(document).ready(function () {
     $("#contato").hide()
     $("#produtos").hide()
     $("#carrinhoUtils").hide()
+    $("#login").hide()
     $("#navigationBar").hide()
     $("#footer").hide()
 
@@ -13,6 +14,9 @@ $(document).ready(function () {
         $("#index").fadeIn("slow")
         $("#sobre").hide()
         $("#contato").hide()
+        $("#produtos").hide()
+        $("#carrinhoUtils").hide()
+        $("#login").hide()
         $("#footer").hide()
     })
 
@@ -21,6 +25,9 @@ $(document).ready(function () {
         $("#index").hide()
         $("#sobre").hide()
         $("#contato").fadeIn("slow")
+        $("#produtos").hide()
+        $("#carrinhoUtils").hide()
+        $("#login").hide()
         $("#footer").show()
     })
 
@@ -32,6 +39,7 @@ $(document).ready(function () {
         $("#contato").hide()
         $("#produtos").hide()
         $("#carrinhoUtils").hide()
+        $("#login").hide()
         $("#footer").show()
     })
 
@@ -42,6 +50,7 @@ $(document).ready(function () {
         $("#contato").fadeIn("slow")
         $("#produtos").hide()
         $("#carrinhoUtils").hide()
+        $("#login").hide()
         $("#footer").show()
     })
 
@@ -52,6 +61,7 @@ $(document).ready(function () {
         $("#contato").hide()
         $("#produtos").hide()
         $("#carrinhoUtils").hide()
+        $("#login").hide()
         $("#footer").show()
 
         $("#ceciliaInfo").hide()
@@ -68,6 +78,18 @@ $(document).ready(function () {
         $("#contato").hide()
         $("#produtos").fadeIn("slow")
         $("#carrinhoUtils").fadeIn("slow")
+        $("#login").hide()
+        $("#footer").show()
+    })
+
+    $("#loginButton").click(function () {
+        $("navigationBar").show()
+        $("#index").hide()
+        $("#sobre").hide()
+        $("#contato").hide()
+        $("#produtos").hide()
+        $("#carrinhoUtils").hide()
+        $("#login").fadeIn("slow")
         $("#footer").show()
     })
 
