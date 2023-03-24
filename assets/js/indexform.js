@@ -45,14 +45,14 @@ $(document).ready(function(){
     $("#irCad").click(function(){
         $("#formCadastro").fadeIn("slow");
         $("#formLogin").hide();
-        $("#textolateral").css('margin-top', '5%')
+        $("#textolateral").css('margin-top', '5%');
     });
 
     //mostrar formulário de login ao clicar no botão
     $("#irLog").click(function(){
         $("#formCadastro").hide();
         $("#formLogin").fadeIn("slow");
-        $("#textolateral").css('margin-top', '2%')
+        $("#textolateral").css('margin-top', '2%');
     });
 
     //se o array estiver vazio
