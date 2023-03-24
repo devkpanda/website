@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+nav a:active{
+    background-color: rgb(145, 145, 145);
+}
+
+main{
+    background-color: #E5E5E5;
+}
+
+#textolateral{
+    color: black;
+    float: left;
+    width: 25%;
+    margin: 2% 1% 2% 16%;
+}
+
+#textolateral h1{
+    font-size: 35px;
+    margin-bottom: 4%;
+}
+
+form{
+    background-color: rgb(199, 199, 199);
+    width: 40%;
+    margin: 2% 48%;
+    padding: 0.1% 1% 1% 1%;
+    border-radius: 10px;
+}
+
+form h1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+form .btn{
+    color: #f2f2f2;
+    background-color: rgb(67, 123, 226);
+    border-color: white;
+}
+
+form .btn:hover{
+    background-color: rgb(0, 54, 105);
+    border-color: rgb(207, 207, 207);
+    transition: 1s;
+}
+
+#btnlog, #irCad{
+    margin-top: 0;
+}
+
+#btnlog, #btncad{
+    width: 100%;
+    background-color: #f2bc1b;
+    color: black;
+    border: none;
+}
+
+#btncad{
+    margin-top: 3%;
+}
+
+.mostrarSenha{
+    padding: 1% 0% 0% 0%;
+}
+
+#semConta{
+    margin-top: 1%;
+    margin-left: 27%;
+}
+
+#semConta2{
+    margin-top: 1%;
+    margin-left: 29%;
+}
+
+.cssNovo{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.topnome{
+    padding-top: 10px;
+}
+
+/* .form-check-input, .form-check-label{
+} */
+
+#sobrenomeSpan, #nomeSpan, #senhaCoin, #senhaSpan, #emailSpan, #emailLogSpan, #senhaLogSpan{
+    color: rgb(180, 1, 1);
+}
+
+.btn-primary{
+    margin-top: 14px;
+}
+
+footer a:hover{
+    color: rgb(223, 223, 223);
+}

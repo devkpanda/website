@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>DevKpanda Serviços</title>
+    <script async src="carrinho.js">
+
+    </script>
+</head>
+
+<body style="background-color: #ededed !important;">
+    <div id="container">
+        <div class="bg-neutral-200 py-12">
+            <div class="flex max-w-7xl mx-auto w-full">
+                <div class="flex-1">
+                    <a class="btn btn-ghost normal-case text-xl font-medium"><img class="h-full"
+                            src="assets/images/logoenome.png" alt=""></a>
+                </div>
+                <div class="flex-none">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-black">Home</a></li>
+                        <li><a class="text-black">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="img">
+            <h1>Confira Nossos Serviços</h1>
+            <button type="button" onClick="document.getElementById('items').scrollIntoView();"
+                class="btn btn-warning">Começar</button>
+        </div>
+
+        <div class="container justify-center mx-auto text-left">
+            <div class="text-black text-left text-2xl font-bold pb-2">Recomendado Para Você</div>
+            <div class="flex">
+                <div class="flex-1 m-3 bg-white-200 text-left">
+                    <img class="rounded-md " src="assets/images/background.jpg" alt="">
+                    <h1 class="text-bold text-3xl text-black mx-3 mt-3">Produto 1</h1>
+                    <p class="text-xl mx-3 mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente deleniti ab, inventore repellat hic non itaque! Amet voluptatum exercitationem dolorem modi, neque aut saepe quidem earum quam minima eveniet?</p>
+                </div>
+                <div class="flex-1 m-3">
+                    <img class="rounded-md " src="assets/images/background.jpg" alt="">
+                    <h1 class="text-bold text-3xl text-black mx-3 mt-3">Produto 2</h1>
+                    <p class="text-xl mx-3 mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente deleniti ab, inventore repellat hic non itaque! Amet voluptatum exercitationem dolorem modi, neque aut saepe quidem earum quam minima eveniet?</p>
+                </div>
+                <div class="flex-1 m-3">
+                    <img class="rounded-md " src="assets/images/background.jpg" alt="">
+                    <h1 class="text-bold text-3xl text-black mx-3 mt-3">Produto 3</h1>
+                    <p class="text-xl mx-3 mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente deleniti ab, inventore repellat hic non itaque! Amet voluptatum exercitationem dolorem modi, neque aut saepe quidem earum quam minima eveniet?</p>
+                </div>
+                <div class="flex-1 m-3">
+                    <img class="rounded-md " src="assets/images/background.jpg" alt="">
+                    <h1 class="text-bold text-3xl text-black mx-3 mt-3">Produto 4</h1>
+                    <p class="text-xl mx-3 mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente deleniti ab, inventore repellat hic non itaque! Amet voluptatum exercitationem dolorem modi, neque aut saepe quidem earum quam minima eveniet?</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--- <div class="linha">
+                    <div class="coluna">
+                        <div class="produto" id="1">
+                            <img src="assets/images/code.png">
+                            <h1>Desenvolvimento de Página Web</h1>
+                            <button onclick="solicitar()">Solicitar</button>
+                        </div>
+                    </div>
+                    <div class="coluna">
+                        <div class="produto" id="2">
+                            <img src="assets/images/code.png">
+                            <h1>Desenvolvimento de Sistema</h1>
+                            <button onclick="solicitar()">Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna">
+                        <div class="produto" id="3">
+                            <img src="assets/images/code.png">
+                            <h1>Hospedagem de Página Web - 6 Meses</h1>
+                            <button onclick="solicitar()">Solicitar</button>
+                        </div>
+                    </div>
+                    <div class="coluna">
+                        <div class="produto" id="4">
+                            <img src="assets/images/code.png">
+                            <h1>Suporte Técnico em Manutenção Web</h1>
+                            <button onclick="solicitar()">Solicitar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <div class="bg-neutral w-full">
+            <footer class="footer p-10 text-neutral-content mx-auto max-w-4xl">
+                <div>
+                    <span class="footer-title">Services</span>
+                    <a class="link link-hover">Branding</a>
+                    <a class="link link-hover">Design</a>
+                    <a class="link link-hover">Marketing</a>
+                    <a class="link link-hover">Advertisement</a>
+                </div>
+                <div>
+                    <span class="footer-title">Company</span>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Press kit</a>
+                </div>
+                <div>
+                    <span class="footer-title">Legal</span>
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                </div>
+            </footer>
+        </div>
+        <div class="popup3">
+            <span id="carrinho" onclick="carrinho()">
+            </span>
+        </div>
+        <div class="popup">
+            <span id="msg">
+                <p>Adicionado ao Carrinho!</p>
+                <button onclick="ok()">Ok</button>
+            </span>
+        </div>
+        <div class="popup2">
+            <span id="listaCarrinho">
+                <button id="cancel" onclick="cancelar()">Cancelar</button>
+                <button id="continuar">Continuar</button>
+            </span>
+        </div>
+    </div>
+    <script>
+        function solicitar() {
+            var mostrar = document.getElementById("msg");
+            mostrar.classList.toggle("show");
+        }
+        function ok() {
+            var esconder = document.getElementById("msg");
+            esconder.classList.toggle("show");
+        }
+        function carrinho() {
+            var n = document.getElementById("listaCarrinho");
+            n.classList.toggle("show2");
+            var n = document.getElementById("carrinho");
+            n.classList.toggle("show3");
+        }
+        function cancelar() {
+            var n = document.getElementById("listaCarrinho");
+            n.classList.toggle("show2");
+            var n = document.getElementById("carrinho");
+            n.classList.toggle("show3");
+        }
+    </script>
+</body>
+
+</html>

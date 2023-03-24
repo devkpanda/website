@@ -1,0 +1,345 @@
+.navbar{
+    background-color: #ededed;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.fonte{
+    color: #1E1E1E;
+    font-family: 'Noto Serif', Serif;
+}
+
+.logo-principal{
+    margin: 40%;
+    width: 100%;
+    height: 100%;
+}
+
+.cor-nav{
+    background-color: #ededed;
+}
+
+.cor-content{
+    background-color:#ededed;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 16vh;
+}
+
+#nav a:hover{
+    color: rgb(17, 17, 17);
+    transition: 1.2s;
+}
+
+#nav a:active{
+    background-color: rgb(117, 117, 117);
+}
+
+#nav a:visited{
+    color: rgb(85, 85, 85);
+}
+
+
+.right-login {
+    width: 32vw;
+    height: 30vh;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    float: left;
+}
+
+.container {
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.card {
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+#cards {
+    margin-left: 15%;
+}
+
+#row {
+    --bs-gutter-x: 0.3rem;
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: #cecccc;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid #cecccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-check-input:checked {
+    background-color: #f2bc1b;
+    border-color: #f2bc1b;
+}
+
+.form-control {
+    color: var(--bs-body-color);
+    background-color: #cecccc;
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid #cecccc;
+}
+
+.img {
+    float: right;
+    margin-right: 25%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+
+
+#botaocontato{
+    background-color: #F2BC1B;
+    color: rgb(94, 87, 0);
+}
+
+#botaocontato:hover{
+    background-color: #ffcf41;
+}
+
+.peer{
+    position: relative;
+}
+
+footer {
+    padding: 3% 15% 2% 25%;
+}
+
+#container{
+    width: 100%;
+    height: 100%;   
+}
+.linha{
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+.coluna {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.produto {
+    width: 75%;
+    height: 80%;
+    border-radius: 30px;
+    background-color: #c9c8c8;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+.produto img{
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.produto h1{
+    margin: 10px;
+    font-size: 30px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.produto button{
+    width: 200px;
+    height: 80px;
+    border-width: 5px;
+    border-color: #F2BC1B;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 25px;
+    color: black;
+    font-family:'Franklin Gothic Medium'; 
+    top: 90%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%)
+}
+#items{
+    width: 80%;
+    height: 80pc;
+    margin: 0% 0% 10% 10%;
+}
+#img{
+    background-image: url(../images/code1.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-width: auto;
+    min-height: 40pc;
+    max-height: 45pc;
+    
+    position: relative;
+}
+#img button{
+    width: 200px;
+    height: 80px;
+    border-width: 3px;
+    position: absolute;
+    margin-left: 15%;
+    font-size: 25px;
+    background-color: #F2BC1B;
+    color: black;
+    font-family:'Franklin Gothic Medium'; 
+    top: 60%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#img h1{
+    margin: auto;
+    font-size: 60px;
+    text-align: left;
+    margin-left: 10%;
+    text-justify: center;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#carrinho{
+    background-color:#a3a2a2 ;
+    background-image: url(../images/cart.png);
+    background-size: cover;
+    background-size: 60%;
+    background-position: 40%;
+    background-repeat: no-repeat;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 5% ;
+    right: 5%;
+    cursor: pointer;
+}
+#msg{
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: #6d6d6d;
+    width: 30%;
+    height: 30%;
+    position: fixed;
+    border-radius: 1.5vw;
+}
+#msg p{
+    position: absolute;
+    text-align: center ;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 2vw;
+    width: 80%;
+    color: white;
+}
+#msg button{
+    width: 7vw;
+    height: 3.5vw;
+    border-width: 0.2vw;
+    border-color: white;
+    position: absolute;
+    border-radius: 5vw;
+    font-size: 1.5vw;
+    color: white;
+    font-family:'Franklin Gothic Medium'; 
+    top: 80%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+#listaCarrinho{
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: #6d6d6d;
+    width: 70%;
+    height: 80%;
+    position: fixed;
+    border-radius: 1.5vw;
+}
+#listaCarrinho #cancel{
+    width: 7vw;
+    height: 3.5vw;
+    border-width: 0.2vw;
+    border-color: white;
+    position: absolute;
+    border-radius: 5vw;
+    font-size: 1.5vw;
+    color: white;
+    font-family:'Franklin Gothic Medium'; 
+    top: 90%;
+    left: 60%;
+    transform: translateY(-50%) translateX(-50%);
+}
+#listaCarrinho #continuar{
+    width: 7vw;
+    height: 3.5vw;
+    border-width: 0.2vw;
+    border-color: white;
+    position: absolute;
+    border-radius: 5vw;
+    font-size: 1.5vw;
+    color: white;
+    font-family:'Franklin Gothic Medium'; 
+    top: 90%;
+    left: 40%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.popup{
+    visibility: hidden;
+}
+.popup .show{
+    visibility: visible;
+}
+.popup2{
+    visibility: hidden;
+}
+.popup2 .show2{
+    visibility: visible;
+}
+
+.popup3 .show3{
+    visibility: hidden;
+}
+.popup3 {
+    visibility: visible;
+}
+
