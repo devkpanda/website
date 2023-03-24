@@ -19,9 +19,6 @@ $(document).ready(function () {
       $("#richardInfo").hide();
       $("#jhonnataInfo").hide();
       $("#vitorInfo").hide();
-      if ($("#luisFoto").click && $("#luisFoto").style.display === "none") {
-        $("#luisInfo").hide();
-      }
     });
 
     $("#jhonnataFoto").click(function () {
