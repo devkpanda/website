@@ -43,7 +43,7 @@ $(document).ready(function(){
     $("#formCadastro").hide();
     //mostrar formulário de cadastro ao clicar no botão
     $("#irCad").click(function(){
-        $("#formCadastro").show();
+        $("#formCadastro").fadeIn("slow");
         $("#formLogin").hide();
         $("#textolateral").css('margin-top', '5%')
     });
@@ -51,7 +51,7 @@ $(document).ready(function(){
     //mostrar formulário de login ao clicar no botão
     $("#irLog").click(function(){
         $("#formCadastro").hide();
-        $("#formLogin").show();
+        $("#formLogin").fadeIn("slow");
         $("#textolateral").css('margin-top', '2%')
     });
 
