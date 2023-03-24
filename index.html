@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <title>DevKPanda</title>
@@ -14,15 +18,14 @@
 
 <body class="bg-neutral-200">
 
-  <div id="initialIndex">
+  <div id="index">
     <div class="bg-neutral-200 hero min-h-screen mx-auto">
       <div class="hero-content text-center text-neutral-content">
         <div class="">
-          <div class="h-60 w-48 bg-gray-200 tooltip bg-center bg-cover"
-            style="background-image: url(assets/images/pandinha-logo.png)"></div>
+          <img class="pl-7 ml-24" width="150px" src="assets/images/pandinha-logo.png">
           <h1 class="mb-2 text-5xl font-bold text-black">DevKPanda</h1>
           <p class="mb-2 text-black text-xl">+ Tecnologia e + Idéias para + Qualidade.</p>
-          <button id="indexButton" class="btn btn-warning text-black"> Get Started </button>
+          <button id="indexButton" class="btn btn-warning text-black max-h-2 max-w-sm"> Get Started </button>
         </div>
       </div>
     </div>
@@ -32,15 +35,15 @@
     <div class="bg-neutral-200 py-12 text-black">
       <div class="flex max-w-7xl mx-auto w-full">
         <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl font-medium" href="index.html"><img class="h-full"
+          <a class="btn btn-ghost normal-case text-xl font-medium" id="logoButton"><img class="h-full"
               src="assets/images/logoenome.png" alt=""></a>
         </div>
         <div class="flex-none">
           <ul class="menu menu-horizontal px-1">
-            <li><a href="sobre.html" class="font-sans text-black font-semibold">Sobre</a></li>
-            <li><a href="contato.html" class="font-sans text-black font-semibold">Contato</a></li>
-            <li><a href="produtos.html" class="font-sans text-black font-semibold ">Serviços</a></li>
-            <li><a href="login.html" class="font-sans text-black font-semibold ">Login</a></li>
+            <li><a id="sobreButton" class="font-sans text-black font-semibold">Sobre</a></li>
+            <li><a id="contatoButton" class="font-sans text-black font-semibold">Contato</a></li>
+            <li><a id="servicosButton" class="font-sans text-black font-semibold ">Serviços</a></li>
+            <li><a id="loginButton" class="font-sans text-black font-semibold ">Login</a></li>
           </ul>
         </div>
       </div>
@@ -84,7 +87,8 @@
             crescer e ter um bom feedback dos nossos clientes. Estamos sempre em busca de novos clientes, então caso
             queira nos dar uma chance de mudar sua empresa para melhor com nossas tecnologias, entre em contato!</div>
           <div class="flex items-center justify-center">
-            <a id="botaosobcontato" class="my-2 inline-block rounded-lg bg-yellow-400 p-2 px-3 font-medium"> Entrar em contato </a>
+            <button id="entrarEmContatoButton" class="my-2 inline-block rounded-lg bg-yellow-400 p-2 px-3 font-medium">
+              Entrar em contato </button>
           </div>
         </div>
       </div>
@@ -92,16 +96,16 @@
         <p class="font-medium text-xl">Integrantes</p>
       </div>
       <div class="flex w-3/4 flex-wrap gap-2 p-4 items-center justify-center py-8">
-        <div id="ceciliaFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
+        <div id="ceciliaFoto" class="h-24 w-24 rounded-full bg-gray-200 bg-center bg-cover"
           style="background-image: url(assets/images/fotoNovaCecilia.jpeg)"></div>
-        <div id="luisFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
+        <div id="luisFoto" class="h-24 w-24 rounded-full bg-gray-200 bg-center bg-cover"
           style="background-image: url(assets/images/fotoNovaLuis.jpg)"></div>
-        <div id="richardFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
+        <div id="richardFoto" class="h-24 w-24 rounded-full bg-gray-200 bg-center bg-cover"
           style="background-image: url(assets/images/fotoNovaRichard.jpg)"></div>
-        <div id="jhonnataFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
+        <div id="jhonnataFoto" class="h-24 w-24 rounded-full bg-gray-200 bg-center bg-cover"
           style="background-image: url(assets/images/fotoNovaJhonnata.jpeg)">
         </div>
-        <div id="vitorFoto" class="h-24 w-24 rounded-full bg-gray-200 tooltip bg-center bg-cover"
+        <div id="vitorFoto" class="h-24 w-24 rounded-full bg-gray-200 bg-center bg-cover"
           style="background-image: url(assets/images/fotoNovaVitor.jpg)"></div>
       </div>
     </div>
@@ -172,6 +176,174 @@
       </div>
 
     </div>
+
+    <script src="assets/js/infoMembersAnimation.js"></script>
+  </div>
+
+  <div id="contato">
+    <section>
+      <div class="right-login">
+        <form action="https://api.staticforms.xyz/submit" method="POST" autocomplete="on">
+          <input type="hidden" name="accessKey" value="chavequeestánoemail">
+          <div class="display-3 h-25 fw-semibold ">
+            <h1">Fale conosco!</h1>
+          </div>
+          <div class=".fs-6 text-muted">
+            <p>Entre em contato conosco para nos dar as melhores ideias para seu projeto!
+            </p>
+          </div>
+          <div id="row" class="row mt-3">
+            <div class="mb-2">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Escreva aqui..."></textarea>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control rounded-1 h-12" placeholder="Nome">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control rounded-1 h-12" placeholder="Email">
+            </div>
+            <div class="col">
+              <button type="button" id="botaocontato" class="btn btn-outline-warning mb-6 rounded-1">Enviar</button>
+            </div>
+            <div class="form-check text-muted mb-3">
+              <input class="form-check-input mt-1 rounded-1" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class=" form-check-label mb-10 ms-1" for="flexCheckChecked">
+                I agree with
+                <a href="#" class="link-warning">Policy Private</a>
+                and
+                <a href="#" class="link-warning">Terms.</a>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="img">
+        <img src="assets/images/pandatt.png" width="300px">
+      </div>
+    </section>
+  </div>
+
+  <div id="produtos">
+    <div id="img">
+      <h1>Confira Nossos Serviços</h1>
+      <button type="button" onClick="document.getElementById('items').scrollIntoView();"
+        class="btn btn-warning">Começar</button>
+    </div>
+
+    <div class="container justify-center mx-auto text-left">
+      <div class="text-black text-left text-2xl font-bold pb-2">Recomendado Para Você</div>
+      <div class="flex">
+        <div class="flex-1 m-3 bg-white-200 text-left">
+          <img class="rounded-md " src="assets/images/background.jpg" alt="">
+          <h1 class="text-bold text-3xl text-black mx-3 mt-3">Produto 1</h1>
+          <p class="text-xl mx-3 mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos sapiente deleniti ab, inventore repellat hic non itaque! Amet voluptatum exercitationem
+            dolorem modi, neque aut saepe quidem earum quam minima eveniet?</p>
+        </div>
+        <div class="flex-1 m-3">
+          <img class="rounded-md " src="assets/images/background.jpg" alt="">
+          <h1 class="text-bold text-3xl text-black mx-3 mt-3">Produto 2</h1>
+          <p class="text-xl mx-3 mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos sapiente deleniti ab, inventore repellat hic non itaque! Amet voluptatum exercitationem
+            dolorem modi, neque aut saepe quidem earum quam minima eveniet?</p>
+        </div>
+        <div class="flex-1 m-3">
+          <img class="rounded-md " src="assets/images/background.jpg" alt="">
+          <h1 class="text-bold text-3xl text-black mx-3 mt-3">Produto 3</h1>
+          <p class="text-xl mx-3 mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos sapiente deleniti ab, inventore repellat hic non itaque! Amet voluptatum exercitationem
+            dolorem modi, neque aut saepe quidem earum quam minima eveniet?</p>
+        </div>
+        <div class="flex-1 m-3">
+          <img class="rounded-md " src="assets/images/background.jpg" alt="">
+          <h1 class="text-bold text-3xl text-black mx-3 mt-3">Produto 4</h1>
+          <p class="text-xl mx-3 mt-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quos sapiente deleniti ab, inventore repellat hic non itaque! Amet voluptatum exercitationem
+            dolorem modi, neque aut saepe quidem earum quam minima eveniet?</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--- <div class="linha">
+              <div class="coluna">
+                  <div class="produto" id="1">
+                      <img src="assets/images/code.png">
+                      <h1>Desenvolvimento de Página Web</h1>
+                      <button onclick="solicitar()">Solicitar</button>
+                  </div>
+              </div>
+              <div class="coluna">
+                  <div class="produto" id="2">
+                      <img src="assets/images/code.png">
+                      <h1>Desenvolvimento de Sistema</h1>
+                      <button onclick="solicitar()">Solicitar</button>
+                  </div>
+              </div>
+          </div>
+          <div class="linha">
+              <div class="coluna">
+                  <div class="produto" id="3">
+                      <img src="assets/images/code.png">
+                      <h1>Hospedagem de Página Web - 6 Meses</h1>
+                      <button onclick="solicitar()">Solicitar</button>
+                  </div>
+              </div>
+              <div class="coluna">
+                  <div class="produto" id="4">
+                      <img src="assets/images/code.png">
+                      <h1>Suporte Técnico em Manutenção Web</h1>
+                      <button onclick="solicitar()">Solicitar</button>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+    <div id="carrinhoUtils">
+      <div class="popup3">
+        <span id="carrinho" onclick="carrinho()">
+        </span>
+      </div>
+      <div class="popup">
+        <span id="msg">
+          <p>Adicionado ao Carrinho!</p>
+          <button onclick="ok()">Ok</button>
+        </span>
+      </div>
+      <div class="popup2">
+        <span id="listaCarrinho">
+          <button id="cancel" onclick="cancelar()">Cancelar</button>
+          <button id="continuar">Continuar</button>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      function solicitar() {
+        var mostrar = document.getElementById("msg");
+        mostrar.classList.toggle("show");
+      }
+      function ok() {
+        var esconder = document.getElementById("msg");
+        esconder.classList.toggle("show");
+      }
+      function carrinho() {
+        var n = document.getElementById("listaCarrinho");
+        n.classList.toggle("show2");
+        var n = document.getElementById("carrinho");
+        n.classList.toggle("show3");
+      }
+      function cancelar() {
+        var n = document.getElementById("listaCarrinho");
+        n.classList.toggle("show2");
+        var n = document.getElementById("carrinho");
+        n.classList.toggle("show3");
+      }
+    </script>
+  </div>
+
+  <div id="footer">
     <div class="bg-neutral w-full">
       <footer class="footer p-10 text-neutral-content mx-auto max-w-4xl">
         <div>
@@ -196,7 +368,6 @@
         </div>
       </footer>
     </div>
-    <script src="assets/js/infoMembersAnimation.js"></script>
   </div>
 
   <script src="assets/js/websiteController.js"></script>
