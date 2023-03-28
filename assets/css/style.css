@@ -47,6 +47,11 @@
     color: rgb(85, 85, 85);
 }
 
+.form {
+    width: auto;
+    margin: 2% 0%;
+    background-color: #c9c8c8;
+}
 
 .right-login {
     width: 32vw;
