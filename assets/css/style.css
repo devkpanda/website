@@ -121,8 +121,8 @@
     margin-bottom: 5%;
 }
 
-cont1 {
-    --bs-gutter-x: 0.3rem;
+#h1 {
+    font-size: 50px;
 }
 
 #button {
@@ -139,7 +139,7 @@ cont1 {
     border-radius: 0;
     border-color: #ededed;
     box-shadow: 0px 3px 0px rgb(0, 0, 0);
-    width:40%;
+    width:90%;
 }
 
 #button2 {
@@ -147,7 +147,7 @@ cont1 {
     border-radius: 0;
     border-color: #ededed;
     box-shadow: 0px 3px 0px rgb(0, 0, 0);
-    width:40%;
+    width:90%;
 }
 
 #button3 {
@@ -155,7 +155,15 @@ cont1 {
     border-radius: 0;
     border-color: #ededed;
     box-shadow: 0px 3px 0px rgb(0, 0, 0);
-    width:40%;
+    width:90%;
+}
+
+#button4 {
+    background-color: #ededed;
+    border-radius: 0;
+    border-color: #ededed;
+    box-shadow: 0px 3px 0px rgb(0, 0, 0);
+    width:90%;
 }
 
 
