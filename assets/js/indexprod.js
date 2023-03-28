@@ -1,6 +1,50 @@
 // JavaScript
 
 $(document).ready(function () {
+
+    $("#Info1").hide();
+    $("#Info2").hide();
+    $("#Info3").hide();
+    $("#Info4").hide();
+
+    $("#buttonDetails1").click(function () {
+        $("#Info1").toggle();
+        $("#Info2").hide();
+        $("#Info3").hide();
+        $("#Info4").hide();
+
+        // $("#textolateral").css('margin-top', '2%')
+    });
+
+    $("#buttonDetails2").click(function () {
+        $("#Info2").toggle();
+        $("#Info1").hide();
+        $("#Info3").hide();
+        $("#Info4").hide();
+        // $("#textolateral").css('margin-top', '5%') 
+    });
+
+    $("#buttonDetails3").click(function () {
+        $("#Info3").toggle();
+        $("#Info2").hide();
+        $("#Info1").hide();
+        $("#Info4").hide();
+        // $("#textolateral").css('margin-top', '2%')
+    });
+
+    $("#buttonDetails4").click(function () {
+        $("#Info4").toggle();
+        $("#Info2").hide();
+        $("#Info1").hide();
+        $("#Info3").hide();
+        // $("#textolateral").css('margin-top', '2%')
+    });
+
+
+});
+
+
+$(document).ready(function () {
     $("#produtos2").hide();
     $("#produtos3").hide();
     $("#produtos4").hide();

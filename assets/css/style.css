@@ -130,6 +130,26 @@
     border-color: #000;
 }
 
+#buttonDetails1 {
+    background-color: #000;
+    border-color: #000;
+}
+
+#buttonDetails2 {
+    background-color: #000;
+    border-color: #000;
+}
+
+#buttonDetails3 {
+    background-color: #000;
+    border-color: #000;
+}
+
+#buttonDetails4 {
+    background-color: #000;
+    border-color: #000;
+}
+
 .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 0.1fr));
 }
