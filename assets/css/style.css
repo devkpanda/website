@@ -316,47 +316,8 @@ footer {
     height: 80pc;
     margin: 0% 0% 10% 10%;
 }
-#img{
-    background-image: url(../images/code1.png);
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
-    min-width: auto;
-    min-height: 40pc;
-    max-height: 45pc;
-    
-    position: relative;
-}
-#img button{
-    width: 200px;
-    height: 80px;
-    border-width: 3px;
-    position: absolute;
-    margin-left: 15%;
-    font-size: 25px;
-    background-color: #F2BC1B;
-    color: black;
-    font-family:'Franklin Gothic Medium'; 
-    top: 60%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-#img h1{
-    margin: auto;
-    font-size: 60px;
-    text-align: left;
-    margin-left: 10%;
-    text-justify: center;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 3px;
-    position: absolute;
-    top: 40%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-#carrinho{
+
+#carrinho2{
     background-color:#a3a2a2 ;
     background-image: url(../images/cart.png);
     background-size: cover;

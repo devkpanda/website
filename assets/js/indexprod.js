@@ -241,5 +241,35 @@ $(document).ready(function () {
         
     });
 
+    var carrinho = [];
+
+    $(".sol").click(function(event){
+        var dataPost = { "acao": 1, "prod":event.target.id, "qtd":1 };
+        $.post("carrinho.php", dataPost , function(data){
+            console.table(data);
+        })			
+    });
+// quando um button com id='sol' é clicado, acao = 1
+
+    $(".remv").click(function( event ){
+        var dataPost = { "acao": 0, "prod":event.target.id, "qtd":0 };
+        $.post( "carrinho.php", dataPost , function(data){
+            console.table(data);
+        })
+    });
+// quando um button com id='remv' é clicado, acao = 0
+    $(".tirar").click(function( event ){
+        var dataPost = { "acao": 2, "prod":event.target.id, "qtd":0 };
+        $.post( "carrinho.php", dataPost , function(data){
+            console.table(data);
+        })
+    });
+// quando um button com id='tirar' é clicado, acao = 2 ps: esse é o que remove completamente todos os produtos de uma vez.
 
 });
+
+function enviarPHP(){
+
+}
+
+// essa function é coisa do cleber, não sei se faz alguma coisa.
