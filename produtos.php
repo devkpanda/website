@@ -1,11 +1,12 @@
 <?php 
     session_start();
   ?>
-
+<head>
 <script src="assets/js/indexprod.js"></script>
 <script async src="carrinho.js">
 
   </script>
+</head>
 <div id="container1" class="bg-neutral h-40">
         <div class="titulo ms-10 d-flex justify-center">
         <h1 id="h1" class="text-white mt-10 d-flex justify-start">Confira Nossos Serviços</h1>
@@ -18,10 +19,10 @@
     <div class="container justify-center mx-auto">
 
       <div class="btn-group grid grid-cols-4 w-50 justify-start ms-10">
-        <button id="button1" class="btn btn-primary text-black mt-10">Front-end</button>
-        <button id="button2" class="btn btn-primary text-black">Back-end</button>
-        <button id="button3" class="btn btn-primary text-black">Diversos</button>
-        <button id="button4" class="btn btn-primary text-black">E-Commerce</button>
+        <button id="button1" class="btn text-black mt-10">Front-end</button>
+        <button id="button2" class="btn text-black">Back-end</button>
+        <button id="button3" class="btn text-black">Diversos</button>
+        <button id="button4" class="btn text-black">E-Commerce</button>
       </div>
       
 
