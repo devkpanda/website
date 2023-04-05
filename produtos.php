@@ -300,7 +300,7 @@
                 <p id="Info5">Página com inclusão, consulta e Sistema CRUD (CREATE, READ, UPDATE, DELETE)
                 </p>
                 <div class="card-actions justify-center mt-10">
-                  <button id="buttonDetails5" class="btn btn-secondary">detalhes</button>
+                  <button onclick="myFunction()" class="btn btn-secondary">detalhes</button>
                   <button id="00005" class="btn btn-secondary sol">solicitar</button>
                 </div>
               </div>
