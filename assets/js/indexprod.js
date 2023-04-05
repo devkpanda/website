@@ -19,6 +19,16 @@ function solicitar() {
     n.classList.toggle("show3");
   }
 
+
+  function myFunction() {
+    var x = document.getElementById("Info5");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
 $(document).ready(function () {
 
     $('#button2, #button3, #button4').click(function () {
@@ -27,14 +37,7 @@ $(document).ready(function () {
             $("#Info6").hide();
             $("#Info7").hide();
             $("#Info8").hide();
-
-            $("#buttonDetails5").click(function () {
-                $("#Info5").toggle();
-                $("#Info2").hide();
-                $("#Info3").hide();
-                $("#Info8").hide();
-            });
-        
+            
             $("#buttonDetails6").click(function () {
                 $("#Info6").toggle();
                 $("#Info5").hide();
@@ -115,14 +118,6 @@ $(document).ready(function () {
             });
         }
      });
-
-
-
-
-    $("#Info5").hide();
-    $("#Info6").hide();
-    $("#Info7").hide();
-    $("#Info8").hide();
 
     $('#button2').click(function () {
             $("#Info5").hide();
@@ -211,7 +206,7 @@ $(document).ready(function () {
 
     // hide e show nos cards
     $("#button1").click(function () {
-        $("#produtos1").fadeIn("slow");
+        $("#produtos1").show();
         $("#produtos2").hide();
         $("#produtos3").hide();
         $("#produtos4").hide();
@@ -221,13 +216,13 @@ $(document).ready(function () {
     $("#button2").click(function () {
         $("#produtos1").hide();
         $("#produtos3").hide();
-        $("#produtos2").fadeIn("slow");
+        $("#produtos2").show();
         $("#produtos4").hide();
 
     });
 
     $("#button3").click(function () {
-        $("#produtos3").fadeIn("slow");
+        $("#produtos3").show();
         $("#produtos1").hide();
         $("#produtos2").hide();
         $("#produtos4").hide();
@@ -235,7 +230,7 @@ $(document).ready(function () {
     });
 
     $("#button4").click(function () {
-        $("#produtos4").fadeIn("slow");
+        $("#produtos4").show();
         $("#produtos1").hide();
         $("#produtos2").hide();
         $("#produtos3").hide();
