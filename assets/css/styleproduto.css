@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#container1 {
+#servicos {
     margin: 2% 0 2% 0;
     background: linear-gradient(151deg, #585858, #747474, #909090, #aeaeae, #b9b9b9);
     background-size: 1000% 1000%;
@@ -29,7 +29,7 @@
     100%{background-position:25% 0%}
 }
 
-#container1 h1{
+#servicos h1{
     font-size: 40px;
     color: black;
 }
